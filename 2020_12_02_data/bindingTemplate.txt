@@ -1,0 +1,38 @@
+{
+    "targets": [{
+        "target_name": "module",
+        'include_dirs': [
+
+            'D:/opencv/build/include',
+            'D:/opencv/build/include/opencv2',
+            'E:/Program Files/DCMTKlib/include'
+        ],
+        'cflags': [
+            '-std=c++11',
+        ],
+        'link_settings': {
+            'libraries': [
+
+                'opencv_world450d.lib',
+                'oflog.lib',
+                'ofstd.lib',
+                'dcmdata.lib',
+                'dcmimage.lib',
+                'dcmimgle.lib',
+                "C:\\Users\\admin\\AppData\\Local\\node-gyp\\Cache\\15.2.0\\x64\\node.lib",
+
+                'netapi32.lib',
+                'iphlpapi.lib',
+                'ws2_32.lib',
+                'wsock32.lib',
+                'advapi32.lib',
+                'user32.lib'
+            ],
+            'library_dirs': [
+                'D:/opencv/build/x64/vc14/lib',
+                'E:/Program Files/DCMTKlib/lib'
+            ]
+        },
+        "sources": ["./module.cpp"]
+    }]
+}
